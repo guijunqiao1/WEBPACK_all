@@ -1,0 +1,1 @@
+(()=>{var __webpack_modules__={728:()=>{eval('console.log("detail的index.js完成输出");\r\n\n\n//# sourceURL=webpack://shide/./src/detail/index.js?')}},__webpack_exports__={};__webpack_modules__[728]()})();

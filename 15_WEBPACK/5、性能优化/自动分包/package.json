@@ -1,0 +1,18 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev":"webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.99.9"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.6.3"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "sideEffects":[
+    "!src/common.js" //加上了!用于确定当前的文件没有副作用-即反义
+  ]
+}
+
+
+//上述的sideEffects配置项控制哪些文件中的内容全部(在无法判断的情况下)存在副作用的，也就是在代码压缩(tree shaking引入模块)期间无法将副作用代码进行移除

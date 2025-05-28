@@ -1,0 +1,22 @@
+@import "./pages.css";
+
+.red {
+  width: 1000px;
+  height: 1000px;   
+  border: 2px solid;
+  color: red;
+  background: url("./屏幕截图\ 2025-03-18\ 095218.png");
+}
+
+/* 针对此时的css内容经过了css-loader转化后的js内容为：
+var import1 = require("./pages.css");
+var import2 = require("./屏幕截图\ 2025-03-18\ 095218.png");
+module.exports = `${import1}
+  .red{
+    color:red;
+    background:url("${import2}");
+  }
+`
+*/
+
+/* 需要注意和png处理的Loader进行配合--否则在引入的内容中会将二进制文件内容识别为js内容 */

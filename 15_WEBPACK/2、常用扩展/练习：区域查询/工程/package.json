@@ -1,0 +1,17 @@
+{
+  "name": "shide",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "npx webpack",
+    "build": "npx webpack --env=prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.6.3",
+    "webpack-dev-server": "^4.15.1"
+  }
+}

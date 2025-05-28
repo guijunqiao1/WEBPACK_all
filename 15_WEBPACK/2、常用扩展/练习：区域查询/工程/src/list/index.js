@@ -1,0 +1,1 @@
+console.log("list中的index.js完成输出");

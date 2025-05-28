@@ -1,0 +1,5 @@
+last 3 version 
+> 1%
+not ie <= 8
+
+; 该文件的作用和postcss中的作用一致，控制编译生成的js代码(postcss则为css代码)兼容的浏览器的并集范围

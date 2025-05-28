@@ -1,0 +1,11 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build":"babel js -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

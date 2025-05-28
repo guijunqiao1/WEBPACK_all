@@ -1,0 +1,1 @@
+(()=>{var __webpack_modules__={44:()=>{eval('console.log("最基础的内容");\n\n//# sourceURL=webpack://shide/./src/index.js?')}},__webpack_exports__={};__webpack_modules__[44]()})();

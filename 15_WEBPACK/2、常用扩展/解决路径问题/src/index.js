@@ -1,0 +1,5 @@
+
+
+console.log(__webpack_require_p__);//该关键字为webpack编译过程中的AST语法树分析的过程中会将该内容替换为__webpakc_require__.p即webpack静态资源属性公共路径对应的值,需要看webpack
+//配置对象中是否在output配置项中指定上该属性值
+

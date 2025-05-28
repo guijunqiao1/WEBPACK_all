@@ -1,0 +1,20 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "npx webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/preset-env": "^7.27.2",
+    "babel-loader": "^10.0.0",
+    "babel-preset-env": "^1.7.0",
+    "core-js": "^3.42.0",
+    "regenerator-runtime": "^0.14.1",
+    "webpack": "^5.99.9",
+    "webpack-cil": "^0.0.1-security"
+  }
+}

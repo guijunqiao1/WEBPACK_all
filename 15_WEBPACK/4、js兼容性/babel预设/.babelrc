@@ -1,0 +1,26 @@
+{
+  // "presets": ["@babel/preset-env"] --此为不对标准babel预设进行修改指定的情况下的预设写法
+  "presets": [
+    ["@babel/preset-env",{//具体预设的配置对象
+      "useBuiltIns":"usage",//当前配置该配置项为usage表示的是当js经过了babel转化之后会自动引入老版本下需要的依赖，若配置为none则不会在babel编译后自动引入
+      "corejs":3 //控制实际require引入的core.js包的主版本号为3
+    }]
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-class-properties",{//该插件的作用为识别ES6语法中的类，同时转化为对应的ES5语法上的代码，同时配置loose为true表示
+    //转化后的内容中类型判断可以适当减少
+      "loose":true
+    }],
+    "@babel/plugin-proposal-function-bind",//该插件的作用为将obj::fn()等价为fn.call(obj),但是目前vscode无法支持识别该插件的语法
+    "@babel/plugin-proposal-optional-chaining",//该插件的作用为将对象中多层嵌套的属性进行索引的时候，自动添加上特定的判断是否存在的语句进行保险赋值,例如：
+    // const obj{a:{b:{c:{d:1}}}} ,var baz = obj?.a?.b?.c?.d,若其中一个索引失败则并不会报错而是赋值为undefined
+    "transform-remove-console",//该插件的作用为将开发阶段中的所有的console方法的调用语句进行去除
+    "@babel/plugin-transform-runtime"//该插件的作用为当被babel指令执行指定上的js文件中存在公共的API(也可以是函数)的时候，会自动将
+    //该函数放置在babel依赖内置js文件库中，同时在所有引入该函数的内容中则都是调用依赖后进行函数的调用,去重函数的调用(需要注意的是，指的是完全相同的函数)
+  ]
+}
+
+// 需要注意在package.json中配置上的：babel js -d dist的含义为：执行babel命令针对当前目录下的js所有目录的内容完成babel的js编译输出，同时使用-d指定输出的
+//文件夹为当前目录下的dist目录(没有则新建)
+
+// babel配置中插件和预设的解析顺序为：插件在前，预设在后同时插件从前往后执行，预设从后往前执行

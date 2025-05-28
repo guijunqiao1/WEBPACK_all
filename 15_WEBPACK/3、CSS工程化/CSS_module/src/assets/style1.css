@@ -1,0 +1,22 @@
+/* 需要注意此处为全局的样式直接引入而不被css-loader以及style-loader映射成为模块处理，
+而是直接的.main{}的形式和其它的hash类名的样式进行合并导出 */
+:global(.main) {
+  background-color: skyblue;
+}
+
+.c1 {
+  color:red;
+}
+.c2 {
+  color:green;
+}
+
+/* 同时需要注意上述的.c1和.c2都是被css-loader以及style-loader处理后形成了hash的，也可以通过使用下方的方式不经过上面两种加载器的方式
+完成hash模块类名的生成,例如: 
+:local(.c1){
+  color:red;
+}
+===>.hash值 {
+  color:red;
+}
+*/

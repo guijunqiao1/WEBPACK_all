@@ -1,0 +1,1 @@
+{"version":3,"file":"scripts/list.23ec1.js","mappings":";;;;AAAA,kC","sources":["webpack://shide/./src/list/index.js"],"sourcesContent":["console.log(\"list中的index.js完成输出\");"],"names":[],"sourceRoot":""}

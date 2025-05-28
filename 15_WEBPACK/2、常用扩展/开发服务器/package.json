@@ -1,0 +1,14 @@
+{
+  "name": "ok",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "loader-utils": "^3.3.1"
+  }
+}

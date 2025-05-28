@@ -1,0 +1,9 @@
+.main {
+  width: 100px;
+  height:100px;
+  background: url("./img/屏幕截图\ 2025-03-18\ 095218.png");
+  background-size:100% 100%;
+}
+
+/* 需要注意上述的url中的内容被css-loader处理之后也会变成require的依赖的形式，故需要使用file-loader对png进行处理，使其中的
+二进制内容变成对应的module.exports的js内容导出进而被require(url转化而来的)引入 */

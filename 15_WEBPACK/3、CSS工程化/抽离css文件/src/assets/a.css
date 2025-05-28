@@ -1,0 +1,5 @@
+@import "./b.css";
+/* 此处的导入和在js中的引入同理，都需要对css文件进行css-loader以及其它loader的处理完成总的生成的css文件的内容的填充 */
+.a {
+  color: red;
+}

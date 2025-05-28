@@ -1,0 +1,35 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "eslint": "^9.27.0",
+    "eslint-plugin-vue": "^10.1.0",
+    "globals": "^16.1.0",
+    "typescript-eslint": "^8.32.1"
+  },
+  "eslintConfig": {
+    "env":{
+      "browser": true,
+      "es6":true
+    },
+    "globals": {
+        "var1":"readonly"
+    }, 
+    "extends":"eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "rules": {
+      "eqeqeq":"off"
+    }
+  }
+}
