@@ -70,7 +70,7 @@ module.exports = {
 
 // 加深印象的提问：
 // Webpack 打包输出的 main.js 中会包含 import "./xxx.css" 的内容吗？
-// 如果你使用的是 style-loader，则 main.js 会包含 CSS 的内容（以 JS 形式嵌入）；
+// 如果你使用的是 style-loader，则 main.js 会包含 CSS 的内容（以 JS 形式嵌入）；--因为对dom的操作本质上还是js模块的事情，所以还是会再map(即main.js)中显示的
 // 如果你使用的是 MiniCssExtractPlugin.loader，则 main.js 不会包含 CSS 内容，CSS 被提取到了单独的 .css 文件中。
 
 
