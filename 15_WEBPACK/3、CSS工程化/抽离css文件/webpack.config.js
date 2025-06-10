@@ -68,6 +68,12 @@ module.exports = {
 
 // 一定要注意css-loader和style-loader的组合和css-loader和MiniCssExtractPlugin.loader的组合之间的本质区别
 
+// 加深印象的提问：
+// Webpack 打包输出的 main.js 中会包含 import "./xxx.css" 的内容吗？
+// 如果你使用的是 style-loader，则 main.js 会包含 CSS 的内容（以 JS 形式嵌入）；
+// 如果你使用的是 MiniCssExtractPlugin.loader，则 main.js 不会包含 CSS 内容，CSS 被提取到了单独的 .css 文件中。
+
+
 // 拓展：
 // 1、[hash]：
 // 定义：[hash] 是基于整个构建过程生成的哈希值。
