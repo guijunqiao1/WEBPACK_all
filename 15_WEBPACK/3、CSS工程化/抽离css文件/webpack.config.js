@@ -60,7 +60,10 @@ module.exports = {
 // 补充：
 // style-loader的作用和css-loader的作用分别是:
 // css-loader用于将import "./...css"；这种模块化了css的语句中的css内容转化为js内容，同时将类名替换为映射内容;
-// style-loader用于将从css-loader中得到的css的内容添加到打包过程中参与的“类似”根目录的html中的head中并且使用style标签包裹其内容
+// style-loader用于将从css-loader中得到的css的内容添加到打包过程中参与的“类似”根目录的html中的head中并且使用style标签包裹其内容;
+
+// 需要注意的是：style-loader并不会将css-loader转化后的Js代码转化为css后再放到style标签中后直接加入到根html中，而是直接利用css-loader中的css代码的字符串进行直接的style标签dom元素对象的
+//innerHTML的赋值
 
 
 // 拓展：
