@@ -63,8 +63,10 @@ module.exports = {
 // style-loader用于将从css-loader中得到的css的内容添加到打包过程中参与的“类似”根目录的html中的head中并且使用style标签包裹其内容;
 
 // 需要注意的是：style-loader并不会将css-loader转化后的Js代码转化为css后再放到style标签中后直接加入到根html中，而是直接利用css-loader中的css代码的字符串进行直接的style标签dom元素对象的
-//innerHTML的赋值
+//innerHTML的赋值；而MiniCssExtractPlugin.loader就是将css-loader转化css后的js代码先转化为相应的css代码后再加入到指定的新建的css文件中
 
+
+// 一定要注意css-loader和style-loader的组合和css-loader和MiniCssExtractPlugin.loader的组合之间的本质区别
 
 // 拓展：
 // 1、[hash]：
