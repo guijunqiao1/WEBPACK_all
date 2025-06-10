@@ -57,6 +57,10 @@ module.exports = {
 //因为HtmlWebpackPlugin插件默认情况下会将所有的chunks资源打包到当前实例中的模板html文件中,此时若在HtmlWebpackplugin对象中配置了chunks的配置，则能够指定上引入的对应上了chunks的css、js资源的对数
 
 
+// 补充：
+// style-loader的作用和css-loader的作用分别是:
+// css-loader用于将import "./...css"；这种模块化了css的语句中的css内容转化为js内容，同时将类名替换为映射内容;
+// style-loader用于将从css-loader中得到的css的内容添加到打包过程中参与的“类似”根目录的html中的head中并且使用style标签包裹其内容
 
 
 // 拓展：
